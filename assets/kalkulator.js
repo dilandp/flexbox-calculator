@@ -31,6 +31,12 @@ for (let button of buttons) {
 		// mendapatkan objek elemen yg diklik
 		const target = event.target;
 
+		if(target.classList.contains("clear")) {
+			clearCalculator();
+			updateDisplay();
+			return;
+		}
+
 		inputDigit(target.innerText);
 		updateDisplay();
 	});
