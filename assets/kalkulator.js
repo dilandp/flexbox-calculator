@@ -65,3 +65,16 @@ function inverseNumber() {
 	}
 	calculator.displayNumber = calculator.displayNumber * -1;
 }
+
+function handleOperator(operator) {
+	if(!calculator.waitingForSecondNumber) {
+		calculator.operator = operator;
+		calculator.waitingForSecondNumber = true;
+		calculator.firstNumber = calculator.displayNumber;
+
+		// mengatur ulang nilai displayNumber supaya tombol selanjutnya dimulai dari angka pertama lagi
+		calculator.displayNumber = '0';
+	}else{
+		alert("Operator sudah ditetapkan");
+	}
+}
