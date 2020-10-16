@@ -1,1 +1,6 @@
-console.log("Selamat Bang Jago!")
+const calculator = {
+	displayNumber: '0',
+	operator: null,
+	firstNumber: null,
+	waitingForSecondNumber: false
+};
