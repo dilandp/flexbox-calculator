@@ -94,4 +94,12 @@ function performCalculation() {
 	}
 
 	calculator.displayNumber = result;
+
+	// set the object to send
+	const history = {
+		firstNumber: calculator.firstNumber,
+		secondNumber: calculator.displayNumber,
+		operator: calculator.operator,
+		result: result
+	}
 }
