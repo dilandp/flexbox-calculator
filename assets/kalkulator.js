@@ -93,7 +93,6 @@ function performCalculation() {
 		result = parseInt(calculator.firstNumber) - parseInt(calculator.displayNumber);
 	}
 
-	calculator.displayNumber = result;
 
 	// set the object to send
 	const history = {
@@ -102,4 +101,8 @@ function performCalculation() {
 		operator: calculator.operator,
 		result: result
 	}
+
+	putHistory(history);
+	calculator.displayNumber = result;
+	renderHistory();
 }
