@@ -93,4 +93,7 @@ tr:nth-child(even) {
 	.button {
 		padding: 10px;
 	}
+	.history {
+		width: 100%;
+	}
 }
